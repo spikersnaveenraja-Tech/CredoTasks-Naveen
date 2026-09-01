@@ -1,0 +1,113 @@
+<header>
+    <figure>
+        <img src="./logo.jpg" alt="Company Logo">
+    </figure>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </nav>
+</header>
+<article>
+    <section>
+        <form>
+            <fieldset>
+            <legend>Registration Form</legend>
+            <div class="row">
+                <label for="userName"><span>Name</span>
+                <span style="color:red">*</span>
+                </label>
+                <input type="text" id="userName" name="userName" required>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userEmail"><span></span>Email</span>
+                <span style="color:red">*</span>
+                </label>
+                <input type="email" id="userEmail" name="userEmail" required>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userPassword"><span>Password</span>
+                <span style="color:red">*</span>
+                </label>
+                <input type="password" id="userPassword" name="userPassword" required>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userMobile"><span>Mobile</span>
+                <span style="color:red">*</span>
+                </label>
+                <input type="tel" id="userMobile" name="userMobile" pattern="^[0-9]{6,10}$" required>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="dateOfBirth"><span>Date of Birth</span>
+                    <span style="color:red">*</span>
+                </label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userAge"><span>Age</span>
+                <span style="color:red">*</span>
+                </label>
+                <input type="number" id="userAge" name="userAge" min="1" max="100" required>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userGender"><span>Gender</span>
+                <span style="color:red">*</span>
+                </label>
+                <span>
+                    <input type="radio" id="user-gender-male" name="userGender" >
+                    <label for="userGender">Male</label>
+                </span>
+                <span>
+                    <input type="radio" id="user-gender-female" name="userGender" >
+                    <label for="userGender">Female</label>
+                </span>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userLanguages"><span>Languages</span>
+                <span style="color:red">*</span>
+                </label>
+                <input type="checkbox" id="user-languages-english" name="userLanguages" value="english" >
+                <label for="userLanguages">English</label>
+                <input type="checkbox" id="user-languages-hindi" name="userLanguages" value="hindi" >
+                <label for="userLanguages">Hindi</label>
+                <input type="checkbox" id="user-languages-other" name="userLanguages" value="other" >
+                <label for="userLanguages">Other</label>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <label for="userCountry"><span>Country</span>
+                <span style="color:red">*</span>
+                </label>
+                <select id="userCountry" name="userCountry" required>
+                    <option value="">--Select Country--</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="row">
+                <label> Comments </label>
+                <textarea rows="10" cols="10" placeholder="ex:comments..."></textarea>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="row">
+                <input type="submit" value="Register" onclick="console.log('Form submitted');" />
+                <input type="button" value="cancel" onclick="console.log('Are you sure you want to cancel?');" />
+                <button type="reset">Reset</button>
+            </div>
+            </fieldset>
+        </form>
+    </section>
+ </article>

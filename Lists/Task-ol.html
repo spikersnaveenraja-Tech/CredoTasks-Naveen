@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>My Page</title>
+     <style>
+      ol { counter-reset: item }
+      li{ display: block }
+      li:before { content: counters(item, ".") " "; counter-increment: item }
+     </style>
+  </head>
+  <body>
+    <div>
+      <h2>Course Modules</h2>
+      <ol>
+        <li>Frontend
+          <ol >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </li>
+         <br/>
+        <li>Backend
+          <ol >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </li>
+        <br/>
+        <li>Frontend
+          <ol >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </li>
+        <br/>
+      </ol>
+    </div>
+  </body>
+</html>
