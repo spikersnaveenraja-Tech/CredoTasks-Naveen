@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample HTML  events</title>
+        <style>
+            .newInputClass {
+             border: 2px solid #665500;
+             background-color: #ffffcc;
+        }
+        </style>
+        <script>
+            function submitEvent(event) {
+                event.preventDefault();
+                alert('Form submitted');
+                console.log('Form submitted',event);
+            }
+        </script>
+    </head>
+    <body onload="alert('body loaded')">
+        <a href="../Naveen_blog.html">BACK</a>
+        <main>
+            <section>
+                <form onsubmit="submitEvent(event)" >
+                    <fieldset>
+                        <legend>Html Events</legend>
+                         <h1 onclick="alert('click event')">Click Event</h1>
+                        <h2 ondblclick="alert('double click event')">Double click event
+                        </h2>
+                       <!-- <p
+                          onclick="alert('click event')";
+                          onMouseover="alert('mouse over event');this.style.color='red';"
+                          onmouseout="alert('mouse out event');this.style.color='black';"
+                        >Mouse over and mouse out events</p>-->
+                        <div>
+                        <select onChange="alert('change event'+this.value)">
+                            <option Selected>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select><br/>
+                        </div>&nbsp;&nbsp;&nbsp;
+                        <div>
+                       <input onfocus="this.className = 'newInputClass';" onblur="this.className = '';" type="text" placeholder="Focus and Blur events"><br/> &nbsp;
+                       </div>
+                       <div>
+                        <button onmousedown="alert('mouse down event')" onmouseup="alert('mouse up event')">Button</button><br/> &nbsp;
+                        </div>
+                        <section>
+                           <input type="text" onkeydown="alert('key pressed')" onkeyup="alert('key released')" onkeypress="alert('key pressed and released')">    
+                         </section>
+                         <hr/>  &nbsp;
+                        <div>
+                            <input type="submit" />
+           
+                         </div>
+                    </fieldset>
+                </form>
+            </section>
+            
+           
+        </main>
+    </body>
+</html>
